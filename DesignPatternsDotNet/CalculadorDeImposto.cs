@@ -10,12 +10,12 @@ namespace DesignPatternsDotNet
         {
             if ("ICMS".Equals(imposto))
             {
-                double icms = new ICMS().CalculaICSM(orcamento);
+                double icms = new ICMS().Calcula(orcamento);
                 Console.WriteLine(icms);
             }
             else if ("ISS".Equals(imposto))
             {
-                double iss = new ISS().CalculaISS(orcamento);
+                double iss = new ISS().Calcula(orcamento);
                 Console.WriteLine(iss);
             }
         }
