@@ -6,7 +6,7 @@ namespace DesignPatternsDotNet
 {
     class CalculadorDeImposto
     {
-        public void RealizaCalculo(Orcamento orcamento, string imposto) 
+        public void RealizaCalculo(Orcamento orcamento, IImposto imposto) 
         {
             if ("ICMS".Equals(imposto))
             {

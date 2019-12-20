@@ -4,11 +4,11 @@ using System.Text;
 
 namespace DesignPatternsDotNet
 {
-    public class ICMS
+    public class ICMS : IImposto
     { 
-        public double CalculaICSM(Orcamento orcamento) 
+        public double Calcula(Orcamento orcamento) 
         {
-            return 0;
+            return orcamento.Valor * 0.1;
         }
     }
 }

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace DesignPatternsDotNet
 {
-    class ISS
+    public class ISS : IImposto
     {
-        public double CalculaISS(Orcamento orcamento)
+        public double Calcula(Orcamento orcamento)
         {
-            return 0;
+            return orcamento.Valor * 0.6;
         }
     }
 }
